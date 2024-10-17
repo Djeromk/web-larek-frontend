@@ -90,50 +90,56 @@ yarn build
 #### Интерфейсы
 •	```IProduct``` - Для описания данных товара:
 
->`interface IProduct {`
-	`id: string;  `
-	`description: string;  `
-	`image: string;  `
-	`title: string;  `
-	`category: string;  `
-	`price: number | null;  `
-`}`
-
+```
+interface IProduct {
+	`id: string;
+	`description: string;
+	`image: string;
+	`title: string;
+	`category: string;
+	`price: number | null;
+}
+```
 •	```IOrder``` - Для описания данных заказа:
-
->`interface IOrder {`
-	`paymentMethod: 'cash' | 'online';`
-	`email: string;`
-	`phone: string;`
-	`address: string;`
-	`totalAmount: number | string;`
-	`items: IProduct[];`
-`}`
+```
+interface IOrder {
+	`paymentMethod: 'cash' | 'online';
+	`email: string;
+	`phone: string;
+	`address: string;
+	`totalAmount: number | string;
+	`items: IProduct[];
+}
+```
 
 •	```ICart``` - Для описания методов управления корзиной
 
-> `interface ICart {`
-	`cartItems: IProduct[];`
-	`addItem(product: IProduct): void;`
-	`removeItem(productId: string): void;`
-	`getItems(): IProduct[];`
-	`getTotalAmount(): number;`
-	`clearCart(): void;`
-`}`
+```
+interface ICart {
+	`cartItems: IProduct[];
+	`addItem(product: IProduct): void;
+	`removeItem(productId: string): void;
+	`getItems(): IProduct[];
+	`getTotalAmount(): number;
+	`clearCart(): void;
+}
+```
 
-- IAppState - Для описания состояния приложения
+- `IAppState` - Для описания состояния приложения
 
-> `interface IAppState {`
-	`catalog: IProduct[];`
-	`cart: ICart;`
-	`preview: IProduct | null;`
-	`order: Partial<IOrder>;`
-	`setCatalog(items: IProduct[]): void;`
-	`setPreview(item: IProduct): void;`
-	`clearPreview(): void;`
-	`setOrder(order: Partial<IOrder>): void;`
-	`clearOrder(): void;`
-`}`
+ ```
+ interface IAppState {
+	catalog: IProduct[];
+	cart: ICart;
+	preview: IProduct | null;
+	order: Partial<IOrder>;
+	setCatalog(items: IProduct[]): void;
+	setPreview(item: IProduct): void;
+	clearPreview(): void;
+	setOrder(order: Partial<IOrder>): void;
+	clearOrder(): void;
+}
+```
 
 •	```IProductApi``` Для получения данных о товарах с сервера
 •	```IModal``` - Для открытия и закрытия модального окна
