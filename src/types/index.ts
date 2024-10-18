@@ -1,4 +1,3 @@
-
 // Модели приложения
 export type ApiListResponse<Type> = {
 	total: number;
@@ -33,8 +32,6 @@ export type TOrder = Pick<IOrder, 'paymentMethod' | 'address'>;
 export type TOrderContactInfo = Pick<IOrder, 'email' | 'phone'>;
 // тип для презентера
 export type TOrderData = TOrder & TOrderContactInfo;
-
-
 
 // интерфейс корзины
 export interface ICart {
