@@ -210,10 +210,10 @@ events: IEvents
 `shopPresenter`
 Связывает данные модели и интерфейса `IView`. Управляет логикой приложения и взаимодействием с пользователем.
 Методы:
-`loadProducts(): void` - загружает список товаров.
-`renderProducts(): void` - отображает товары в разметке.
-`openProductModal(product: IProduct): void` - открывает модальное окно с информацией о товаре.
-`addToCart(product: IProduct): void` - добавляет товар в корзину.
+- `loadProducts(): void` - загружает список товаров.
+- `renderProducts(): void` - отображает товары в разметке.
+- `openProductModal(product: IProduct): void` - открывает модальное окно с информацией о товаре.
+- `addToCart(product: IProduct): void` - добавляет товар в корзину.
 
 ### Взаимодействие между классами и интерфейсами
 
