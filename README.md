@@ -200,21 +200,33 @@ render(data: HTMLElement): void,
 - **BasketItem** - Класс для отображения карточки товара в корзине. В конструкторе передается темплейт карточки.
 
 - **Basket** - Класс для отображения содержимого корзины.
->`basketProducts: HTMLElement` - список товаров в корзине
-`totalAmount: HTMLElement` - общая стоимость;
-`checkoutButton: HTMLElement` - кнопка оформления заказа
+
+```js
+basketProducts: HTMLElement // список товаров в корзине
+totalAmount: HTMLElement // общая стоимость;
+checkoutButton: HTMLElement // кнопка оформления заказа
+```
 
 - **Order** - Класс для отображения формы оформления заказа в модальном окне.
->`adressForm: HTMLFormElement` - форма оформления заказа
-`paymentMethods: HTMLButtonElement` - выбор способа оплаты
-`submit: HTMLButtonElement` - кнопка перехода к следующему шагу
+
+```js
+adressForm: HTMLFormElement // форма оформления заказа
+paymentMethods: HTMLButtonElement // выбор способа оплаты
+submit: HTMLButtonElement // кнопка перехода к следующему шагу
+```
 
 - **Contacts** - Класс для отображения формы ввода контактных данных в модальном окне.
->`submit: HTMLButtonElement` - кнопка подтверждения заказа
+
+```js
+submit: HTMLButtonElement // кнопка подтверждения заказа
+```
 
 - **Success** - Класс для отображения сообщения об успешном оформлении заказа.
->`description: HTMLElement` - сообщение о списании синапсов
-`confirmButton: HTMLButtonElement` - кнопка возвращения на главную страницу
+
+```js
+description: HTMLElement // сообщение о списании синапсов
+confirmButton: HTMLButtonElement // кнопка возвращения на главную страницу
+```
 
 ---
 
